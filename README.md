@@ -5,9 +5,7 @@
 
 ## Getting Started
 
-![image](http://koolth.com.au/yo-bourbon-neat.jpg)
-
-###generator-bourbon-neat
+###sd-generator-bourbon-neat
 An easy and straight-forward generator to get you up and running with a full web framework using [Bourbon](http://bourbon.io/) and [Neat](http://neat.bourbon.io/). The generator installs Sass, Bourbon and Neat and gives an [HTML5 Boilerplate](http://html5boilerplate.com/) (it also auto generates a useful directory structure for a web project).
 
 ######Optional:
@@ -29,28 +27,29 @@ Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](
 $ npm install -g yo
 ```
 
-### Yeoman Generators
+### Running the generator
 
-Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
+At this point, you have a working generator. The next logical step would be to run it and see if it works.
 
-To install generator-bourbon-neat from npm, run:
+Since you're developing the generator locally, it's not yet available as a global npm module. A global module may be created and symlinked to a local one, using npm. Here's what you'll want to do:
 
-```bash
-$ npm install -g generator-bourbon-neat
-```
-
-Finally, initiate the generator:
+On the command line, from the root of your generator project (in the generator-name/ folder), type:
 
 ```bash
-$ yo bourbon-neat
+npm link
 ```
+
+```bash
+$ yo sd-bourbon-neat
+```
+
+That'll install your project dependencies and symlink a global module to your local file. After npm is done, you'll be able to call yo name and you should see the console.log, defined earlier, rendered in the terminal. Congratulations, you just built your first generator!
 
 ### Getting To Know Yeoman
 
 Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
 
 If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
-
 
 ## License
 
@@ -59,5 +58,4 @@ MIT
 generator-bourbon-neat
 ======================
 
-Yeoman generator for a website using thoughtbot's Bourbon Neat. Options for Normalize and Modernizr! 
-
+Yeoman generator for a website using thoughtbot's Bourbon Neat. Options for Normalize and Modernizr!

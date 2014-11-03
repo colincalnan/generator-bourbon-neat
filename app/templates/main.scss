@@ -1,14 +1,16 @@
 // bower:scss
 @import 'bourbon';
-@import 'neat'; 
-// endbower 
+@import 'neat';
+// endbower
+
+@import 'typography_scale';
 
 $linkColor: #4183C4;
 $hoverColor: lighten($linkColor, 10);
 $borderColor: #b3b3b3;
 
 body {
-	@include outer-container; 
+	@include outer-container;
 	font-family: $helvetica;
 	background-color: #f0f0f0;
 }
@@ -24,6 +26,9 @@ body {
 	background-color: white;
 	.main {
 		margin-bottom: 25px;
+		img.logo {
+			float: right;
+		}
 	}
 }
 .header {
@@ -40,7 +45,7 @@ body {
 	a {
 		color: #0081C6;
 		&:hover {
-			color: $hoverColor;	
+			color: $hoverColor;
 		}
 	}
 }

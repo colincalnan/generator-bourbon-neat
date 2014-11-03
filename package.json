@@ -1,18 +1,14 @@
 {
-  "name": "generator-bourbon-neat",
+  "name": "generator-sd-bourbon-neat",
   "version": "0.1.2",
   "description": "Yeoman generator for a website using thoughtbot's Bourbon Neat.",
   "license": "MIT",
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "koolth/generator-bourbon-neat"
-    },
-  "author": {
-    "name": "John Flackett",
-    "email": "",
-    "url": "https://github.com/koolth"
+    "url": "https://github.com/koolth/generator-bourbon-neat"
   },
+  "author": "John Flackett (https://github.com/koolth)",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -47,5 +43,12 @@
   },
   "peerDependencies": {
     "yo": ">=1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/koolth/generator-bourbon-neat/issues"
+  },
+  "homepage": "https://github.com/koolth/generator-bourbon-neat",
+  "directories": {
+    "test": "test"
   }
 }
