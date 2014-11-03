@@ -88,7 +88,7 @@ var BourbonNeatGenerator = yeoman.generators.Base.extend({
     this.copy('htaccess', 'app/.htaccess');
     this.copy('robots.txt', 'app/robots.txt');
 
-    this.copy('logo.png', 'images/logo.png');
+    this.copy('logo.png', 'app/images/logo.png');
   },
 
   projectfiles: function () {
